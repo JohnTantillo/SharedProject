@@ -12,7 +12,6 @@ canvas {
 <script>
 
 var score = 0;
-var counter = 0;
 
 function startGame() {
     myGameArea.start();
@@ -119,10 +118,7 @@ function updateGameArea() {
   }
   if (myGamePiece.crashWith(myObstacle)) {
     if (counter > 25){
-      score = score + 0.1;
-      counter = 0;
-    } else {
-      counter = counter + 1;
+        
     }
   }
   if (score < 0.00001){
