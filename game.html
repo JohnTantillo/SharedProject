@@ -95,6 +95,10 @@ function component(width, height, color, x, y, type) {
     return crash;
   }
 }
+function updatedGameScore(x){
+  x += .1
+  return x;
+}
 function updateGameArea() {
   myGameArea.clear();
   //myObstacle.update();
@@ -241,7 +245,7 @@ function updateGameArea() {
     }
     questiontimer ++
   }
-    
+
   if (score < 0.00001){
     myScore.text = "GPA (SCORE): " + "0.0"
   } else if (score > 4){
