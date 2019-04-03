@@ -250,14 +250,14 @@ function getScore(){
 //----------------------------------------------------------------
 
 
-function testGetScore(){
-  var assert = require('assert');
-  x = getScore();
-  assert (x == score);
-}
-
-function testUpdateScore(){
-  var assert = require('assert');
-  var y = updateGameArea(.5);
-  assert (y == .6);
-}
+// function testGetScore(){
+//   var assert = require('assert');
+//   x = getScore();
+//   assert (x == score);
+// }
+//
+// function testUpdateScore(){
+//   var assert = require('assert');
+//   var y = updateGameArea(.5);
+//   assert (y == .6);
+// }

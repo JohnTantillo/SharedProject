@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="test.js"></script>
+<script>
+function testGetScore(){
+  x = getScore();
+  if (x == score){
+    console.log("testGetScore Passed!")
+  } else {
+    console.log("testGetScore Failed!")
+  }
+}
+
+function testUpdateScore(){
+  var y = updateGameArea(.5);
+  if (y == .6){
+    console.log("testGetScore Passed!")
+  } else {
+    console.log("testGetScore Failed!")
+  }
+}
+</script>
+<body onload="testGetScore()">
+  <p onload="testUpdateScore()">
+  </p>
+</body>
+</html>
