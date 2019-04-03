@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<style>
-canvas {
-    border: 1px solid #d3d3d3;
-}
-</style>
-</head>
-<body onload="startGame()">
-<script>
 var score = 0;
 var questiontimer = 0;
 function startGame() {
@@ -258,7 +246,18 @@ function updateGameArea(x) {
 function getScore(){
   return score;
 }
-</script>
 
-</body>
-</html>
+//----------------------------------------------------------------
+
+
+function testGetScore(){
+  var assert = require('assert');
+  x = getScore();
+  assert (x == score);
+}
+
+function testUpdateScore(){
+  var assert = require('assert');
+  var y = updateGameArea(.5);
+  assert (y == .6);
+}
