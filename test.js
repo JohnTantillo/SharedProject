@@ -237,14 +237,16 @@ function updateGameArea(x) {
   } else {
     myScore.text = "GPA (SCORE): " + Math.round(score * 10) / 10;
   }
-  x += .1
-  return x;
   myScore.update();
   myGamePiece.newPos();
   myGamePiece.update();
 }
 function getScore(){
   return score;
+}
+function updateScore(x){
+  x += .1
+  return x;
 }
 
 //----------------------------------------------------------------
