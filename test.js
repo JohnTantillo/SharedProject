@@ -1,3 +1,6 @@
+//This is part not our final project demo. Demo 3 is all within DrawMMO.zip
+
+
 var score = 0;
 var questiontimer = 0;
 function startGame() {
